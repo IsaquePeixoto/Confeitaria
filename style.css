@@ -1,0 +1,190 @@
+/* Define a fonte padrão e o fundo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2a0134;
+    color: white;
+}
+
+/* Estiliza o container principal */
+.container {
+    max-width: 900px; /* Aumentado para acomodar gráficos */
+    margin: auto;
+    padding: 20px;
+    background: #3e0b50;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.5);
+}
+
+/* Estiliza inputs e botões */
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Estiliza botões */
+button {
+    background-color: #00ff96;
+    color: #2a0134;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para botões */
+button:hover {
+    background-color: #00cc78;
+}
+
+/* Estiliza tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Estiliza células de tabelas */
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estiliza cabeçalhos de tabelas */
+th {
+    background-color: #3e0b50;
+}
+
+/* Estiliza links */
+a {
+    color: #00ff96;
+    text-decoration: none;
+}
+
+/* Efeito hover para links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza inputs de texto, e-mail, senha e número */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #5a0a7e;
+    color: white;
+    font-size: 14px;
+}
+
+/* Estiliza labels */
+label {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Estiliza checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estiliza a lista de pedidos */
+#listaPedidos {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estiliza cada item da lista de pedidos */
+.pedido-item {
+    background: rgba(62, 11, 80, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito hover para itens da lista */
+.pedido-item:hover {
+    transform: scale(1.02);
+}
+
+/* Estiliza os botões dentro dos itens da lista */
+.pedido-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estiliza botões específicos dos pedidos */
+.pedido-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+/* Estiliza botão de "Pago" */
+.btn-pago {
+    background-color: #00ff96;
+    color: #2a0134;
+}
+
+/* Estiliza botão de "Em aberto" */
+.btn-aberto {
+    background-color: #ffce56;
+    color: #2a0134;
+}
+
+/* Estiliza botão de "Excluir" */
+.btn-excluir {
+    background-color: #ff6384;
+    color: white;
+}
+
+/* Efeito hover para botão de "Pago" */
+.btn-pago:hover {
+    background-color: #00cc78;
+}
+
+/* Efeito hover para botão de "Em aberto" */
+.btn-aberto:hover {
+    background-color: #e6b800;
+}
+
+/* Efeito hover para botão de "Excluir" */
+.btn-excluir:hover {
+    background-color: #cc0029;
+}
+
+/* Estiliza o container dos gráficos */
+.graficos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Estiliza cada container de gráfico */
+.chart-container {
+    width: 30%;
+    min-width: 250px;
+    height: 300px;
+    margin: 10px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Login</title>
+    <!-- Inclui o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclui a biblioteca Chart.js para os gráficos de fundo -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Estiliza o corpo da página */
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #2a0134;
+            position: relative;
+        }
+        /* Estiliza o container principal */
+        .container {
+            background: rgba(62, 11, 80, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 150, 0.5);
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            width: 90%;
+            max-width: 500px;
+            z-index: 2;
+        }
+        /* Estiliza o container dos gráficos de fundo */
+        .background-charts {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.3;
+        }
+        /* Estiliza cada container de gráfico */
+        .chart-container {
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal com o formulário de login -->
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="emailLogin" placeholder="E-mail">
+        <input type="password" id="senhaLogin" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <a href="cadastro.html"><button>Cadastrar</button></a>
+    </div>
+    <!-- Container para os gráficos de fundo -->
+    <div class="background-charts">
+        <div class="chart-container"><canvas id="chart1"></canvas></div>
+        <div class="chart-container"><canvas id="chart2"></canvas></div>
+        <div class="chart-container"><canvas id="chart3"></canvas></div>
+    </div>
+    <!-- Inclui o arquivo JavaScript específico para a página -->
+    <script src="index.js"></script>
+</body>
+</html>

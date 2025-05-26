@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Administração</title>
+    <!-- Inclui o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificarAdmin()">
+    <!-- Container principal com a tabela de usuários -->
+    <div class="container">
+        <h2>Área de Administração</h2>
+
+        <h3>Usuários Cadastrados</h3>
+        <table id="usuariosTabela" style="width: 100%; border-collapse: collapse; color: white;">
+            <thead>
+                <tr>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A lista de usuários será gerada aqui -->
+            </tbody>
+        </table>
+
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <!-- Inclui o arquivo JavaScript específico para a página -->
+    <script src="admin.js"></script>
+</body>
+</html>

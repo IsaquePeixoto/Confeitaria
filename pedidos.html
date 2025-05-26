@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Pedidos Registrados</title>
+    <!-- Inclui o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclui a biblioteca Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Inclui a biblioteca Chart.js para os gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="carregarPedidos()">
+    <!-- Container principal com o conteúdo da página -->
+    <div class="container">
+        <h2>Pedidos Registrados</h2>
+        <!-- Lista onde os pedidos serão exibidos -->
+        <ul id="listaPedidos"></ul>
+
+        <!-- Seção para os gráficos financeiros -->
+        <div class="graficos-container">
+            <!-- Container para o gráfico de despesas -->
+            <div class="chart-container">
+                <canvas id="graficoDespesas"></canvas>
+            </div>
+            <!-- Container para o gráfico de lucros -->
+            <div class="chart-container">
+                <canvas id="graficoLucros"></canvas>
+            </div>
+            <!-- Container para o gráfico de fluxo financeiro -->
+            <div class="chart-container">
+                <canvas id="graficoFluxo"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclui o arquivo JavaScript específico para a página -->
+    <script src="pedidos.js"></script>
+</body>
+</html>
